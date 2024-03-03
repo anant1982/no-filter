@@ -22,8 +22,11 @@ const VisionDetails = () => {
 				className="swiper-slide service"
 				data-hash="work-2"
 				data-color="#bed1e0">
+				<div className="inner-top">
+					<h2>VISION</h2>
+				</div>
 				<div className="inner">
-					<h2>Vision</h2>
+					<h2 className="is-uppercase">Vision</h2>
 					<p>
 						Exercitation velit dolor veniam aute commodo ex culpa duis culpa
 						sint ut nostrud voluptate in. Velit sint dolor consectetur aliquip
