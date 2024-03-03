@@ -1,7 +1,4 @@
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
-import SpecialDialDetails from "./components/SpecialDialDetails";
-import SmallTalkDetails from "./components/SmallTalkDetails";
-import InsideJokesDetails from "./components/InsideJokesDetails";
 import Home from "./components/Home";
 import Header from "./components/Header";
 import Vision from "./components/Vision";
@@ -30,7 +27,7 @@ function App() {
 					element: <Vision />,
 				},
 				{
-					path: "/special-dial",
+					path: "/speed-dial",
 					element: <SpecialDial />,
 				},
 				{

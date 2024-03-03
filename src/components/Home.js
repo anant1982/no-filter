@@ -7,13 +7,8 @@ const Home = () => {
 	}, []);
 	return (
 		<div id="wrapper">
-			<div className="swiper-container" id="gallery">
-				<div className="swiper-wrapper">
-					<MainContainer />
-				</div>
-				<a className="scroll-to-beginning">
-					<i className="icon-arrows-slim-left"></i>
-				</a>
+			<div className="home-page-wrapper">
+				<MainContainer />
 			</div>
 		</div>
 	);

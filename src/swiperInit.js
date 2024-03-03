@@ -168,27 +168,4 @@ export function swiperInitialize() {
 	});
 
 	$(".swiper-container").removeClass("is-invisible");
-
-	$("#menu-bar").on("click", function (event) {
-		if ($(event.target).is("#logo")) {
-			return true;
-		} else {
-			$("#wrapper").toggleClass("show-menu");
-			$("#menu-bar").toggleClass("show-menu");
-			$("#menu").toggleClass("show-menu");
-		}
-	});
-
-	$("#wrapper").on("click", function (event) {
-		// check whether it is clicked inside #menu
-		var insideMenu =
-			event.pageX > $("#menu").offset().left &&
-			event.pageX < $("#menu").offset().left + $("#menu").width();
-
-		if (!insideMenu) {
-			$("#wrapper").removeClass("show-menu");
-			$("#menu-bar").removeClass("show-menu");
-			$("#menu").removeClass("show-menu");
-		}
-	});
 }

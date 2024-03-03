@@ -16,7 +16,6 @@ const VisionDetails = () => {
 						src={process.env.PUBLIC_URL + "/images/IMG_1636.webp"}
 						alt="work 1"
 					/>
-					<h2>Vision</h2>
 				</div>
 			</div>
 			<div
@@ -24,7 +23,7 @@ const VisionDetails = () => {
 				data-hash="work-2"
 				data-color="#bed1e0">
 				<div className="inner">
-					<h2>Small Talk</h2>
+					<h2>Vision</h2>
 					<p>
 						Exercitation velit dolor veniam aute commodo ex culpa duis culpa
 						sint ut nostrud voluptate in. Velit sint dolor consectetur aliquip

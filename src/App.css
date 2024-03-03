@@ -49,6 +49,14 @@ body {
 	overflow: hidden;
 }
 
+@media screen and (max-width: 767px) {
+	html,
+	body {
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+}
+
 html,
 body.vertical {
 	position: static;
@@ -243,19 +251,14 @@ a {
 }
 
 #menu-bar {
-	width: 100vh;
+	width: 100%;
 	height: 55px;
 	position: fixed;
-	background-color: #fff;
 	top: 0;
 	left: 0;
-	transform-origin: right top;
-	transform: translateX(-100%) rotate(-90deg);
 	z-index: 2;
-	transition-property: background-color;
+	transition-property: width;
 	transition-duration: 200ms;
-	border-bottom: 1px solid #ddd;
-	cursor: pointer;
 }
 @media screen and (max-width: 768px) {
 	#menu-bar {
@@ -263,26 +266,10 @@ a {
 	}
 }
 
-#menu-bar:hover,
-#menu-bar.show-menu {
-	background-color: #222;
-	border-bottom: 1px solid #555;
-}
-#menu-bar:hover #menu-icon span,
-#menu-bar.show-menu #menu-icon span {
-	background: #fff;
-}
-#menu-bar:hover #logo,
-#menu-bar.show-menu #logo {
-	color: #fff;
-}
-
 #contact {
 	position: fixed;
-	top: 46px;
-	right: 50px;
-	transform-origin: right top;
-	transform: rotate(-90deg);
+	top: 18px;
+	right: 30px;
 	color: #333;
 	font-size: 0.88889rem;
 	z-index: 2;
@@ -343,7 +330,7 @@ a {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	right: 35px;
+	left: 35px;
 	font-weight: 600;
 	color: #000;
 	font-family: "Libre Franklin", sans-serif;
@@ -365,6 +352,36 @@ a {
 	left: 0;
 	color: #fff;
 	padding-top: 30px;
+}
+.home-page-wrapper {
+	display: flex;
+	padding: 0 25px;
+	align-items: center;
+	height: 100%;
+	background: #bed1e0;
+}
+@media screen and (max-width: 767px) {
+	.home-page-wrapper {
+		padding: 40px 0 0;
+		flex-wrap: wrap;
+		height: auto;
+	}
+	.home-page-wrapper .slide {
+		margin-bottom: 20px;
+	}
+}
+.home-page-wrapper .slide {
+	padding: 0 15px;
+	animation: ImageLeft 0.9s ease-in-out forwards;
+}
+.home-page-wrapper .slide .inner a {
+	display: block;
+}
+.home-page-wrapper .slide .inner h2 {
+	text-align: center;
+	margin-bottom: 0;
+	font-size: 1.3rem;
+	margin-top: 5px;
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
 	#menu {
@@ -651,7 +668,7 @@ body {
 
 @keyframes ImageLeft {
 	0% {
-		transform: translate3d(100%, 0, 0);
+		transform: translate3d(-100%, 0, 0);
 	}
 	100% {
 		transform: translate3d(0, 0, 0);
@@ -669,7 +686,7 @@ body {
 
 /* galler slide */
 .swiper-slide.work {
-	width: 60%;
+	width: 40%;
 	background: #e4c7ae;
 	transition-property: background-color;
 	transition-duration: 700ms;
@@ -682,7 +699,7 @@ body {
 	}
 }
 .swiper-slide.work .inner {
-	width: 55%;
+	width: 75%;
 	position: absolute;
 	top: 48%;
 	left: 50%;
@@ -1023,11 +1040,19 @@ body {
 }
 
 .swiper-slide.service {
-	width: 40%;
+	width: 50%;
 	min-width: 500px;
 	padding: 0 95px;
-	border-left: 1px solid #ddd;
+	border-left: 1px solid #afaeae;
 	background-color: #bed1e0;
+}
+.swiper-slide.service .inner-top {
+	position: absolute;
+	top: 0;
+	left: 40px;
+}
+.swiper-slide.service .inner-top h2 {
+	letter-spacing: 0.8rem;
 }
 @media screen and (max-width: 768px) {
 	.swiper-slide.service {
@@ -1037,7 +1062,7 @@ body {
 }
 .swiper-slide.service .inner {
 	position: relative;
-	top: 45%;
+	top: 50%;
 	transform: translate3d(0, -50%, 0);
 }
 .swiper-slide.service .inner .icon {
