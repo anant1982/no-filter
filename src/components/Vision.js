@@ -1,7 +1,7 @@
-import MainContainer from "./MainContainer";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
+import VisionDetails from "./VisionDetails";
 import { swiperInitialize } from "../swiperInit";
-const Home = () => {
+const Vision = () => {
 	useEffect(() => {
 		swiperInitialize();
 	}, []);
@@ -9,7 +9,7 @@ const Home = () => {
 		<div id="wrapper">
 			<div className="swiper-container" id="gallery">
 				<div className="swiper-wrapper">
-					<MainContainer />
+					<VisionDetails />
 				</div>
 				<a className="scroll-to-beginning">
 					<i className="icon-arrows-slim-left"></i>
@@ -19,4 +19,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default Vision;

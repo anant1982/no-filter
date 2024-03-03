@@ -1,14 +1,17 @@
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
-import VisionDetails from "./components/VisionDetails";
 import SpecialDialDetails from "./components/SpecialDialDetails";
 import SmallTalkDetails from "./components/SmallTalkDetails";
 import InsideJokesDetails from "./components/InsideJokesDetails";
 import Home from "./components/Home";
 import Header from "./components/Header";
+import Vision from "./components/Vision";
+import SmallTalk from "./components/SmallTalk";
+import SpecialDial from "./components/SpecialDial";
+import InsideJokes from "./components/InsideJokes";
 
 function App() {
 	const AppLayout = () => (
-		<div className="app-container h-screen">
+		<div>
 			<Header />
 			<Outlet />
 		</div>
@@ -24,19 +27,19 @@ function App() {
 				},
 				{
 					path: "/vision",
-					element: <VisionDetails />,
+					element: <Vision />,
 				},
 				{
 					path: "/special-dial",
-					element: <SpecialDialDetails />,
+					element: <SpecialDial />,
 				},
 				{
 					path: "/small-talk",
-					element: <SmallTalkDetails />,
+					element: <SmallTalk />,
 				},
 				{
 					path: "/inside-jokes",
-					element: <InsideJokesDetails />,
+					element: <InsideJokes />,
 				},
 			],
 		},

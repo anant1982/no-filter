@@ -1,168 +1,62 @@
 import React from "react";
-// import function to register Swiper custom elements
-import { register } from "swiper/element/bundle";
-// register Swiper custom elements
-register();
+import { Link } from "react-router-dom";
 
 const VisionDetails = () => {
 	return (
-		<swiper-container
-			slides-per-view="1"
-			speed="500"
-			loop="true"
-			css-mode="true"
-			class="bg-gray-200 p-3 pt-10">
-			<swiper-slide>
-				<div className="flex gap-10">
-					<div className="w-1/2">
-						<img
-							src={process.env.PUBLIC_URL + "/images/IMG_1636.webp"}
-							alt="img-1"
-							className="rounded-2xl overflow-hidden mb-4"
-						/>
-					</div>
-					<div className="w-1/2">
-						<h1 className="text-2xl font-bold mb-6">Vision</h1>
-						<p>
-							Enim in culpa et consectetur occaecat magna cillum fugiat
-							adipisicing minim cillum excepteur est nulla. Ullamco aliquip
-							aliquip officia ea sunt voluptate irure ad ea laborum voluptate
-							commodo aute incididunt. Ex cillum cupidatat pariatur ex
-							incididunt irure non consectetur tempor nulla exercitation ad
-							quis.
-							<br />
-							<br />
-							Enim in culpa et consectetur occaecat magna cillum fugiat
-							adipisicing minim cillum excepteur est nulla. Ullamco aliquip
-							aliquip officia ea sunt voluptate irure ad ea laborum voluptate
-							commodo aute incididunt. Ex cillum cupidatat pariatur ex
-							incididunt irure non consectetur tempor nulla exercitation ad
-							quis.
-						</p>
-					</div>
+		<>
+			<div
+				className="swiper-slide work"
+				data-hash="work-1"
+				data-color="#e4c7ae">
+				<div className="inner">
+					<img
+						style={{
+							borderRadius: "16px",
+						}}
+						src={process.env.PUBLIC_URL + "/images/IMG_1636.webp"}
+						alt="work 1"
+					/>
+					<h2>Vision</h2>
 				</div>
-			</swiper-slide>
-			<swiper-slide>
-				<div className="flex gap-10">
-					<div className="w-1/2">
-						<img
-							src={process.env.PUBLIC_URL + "/images/IMG_1636.webp"}
-							alt="img-1"
-							className="rounded-2xl overflow-hidden mb-4"
-						/>
-					</div>
-					<div className="w-1/2">
-						<h1 className="text-2xl font-bold mb-6">Vision</h1>
-						<p>
-							Enim in culpa et consectetur occaecat magna cillum fugiat
-							adipisicing minim cillum excepteur est nulla. Ullamco aliquip
-							aliquip officia ea sunt voluptate irure ad ea laborum voluptate
-							commodo aute incididunt. Ex cillum cupidatat pariatur ex
-							incididunt irure non consectetur tempor nulla exercitation ad
-							quis.
-							<br />
-							<br />
-							Enim in culpa et consectetur occaecat magna cillum fugiat
-							adipisicing minim cillum excepteur est nulla. Ullamco aliquip
-							aliquip officia ea sunt voluptate irure ad ea laborum voluptate
-							commodo aute incididunt. Ex cillum cupidatat pariatur ex
-							incididunt irure non consectetur tempor nulla exercitation ad
-							quis.
-						</p>
-					</div>
+			</div>
+			<div
+				className="swiper-slide service"
+				data-hash="work-2"
+				data-color="#bed1e0">
+				<div className="inner">
+					<h2>Small Talk</h2>
+					<p>
+						Exercitation velit dolor veniam aute commodo ex culpa duis culpa
+						sint ut nostrud voluptate in. Velit sint dolor consectetur aliquip
+						non et dolor nulla eu in aute nulla. Ex aute dolor exercitation qui
+						velit culpa commodo culpa occaecat qui exercitation tempor. Anim
+						anim aute elit amet quis sint aute ad incididunt in. Excepteur enim
+						exercitation ipsum laborum pariatur incididunt laboris commodo. Quis
+						Lorem ullamco labore eu. Esse nulla cupidatat dolor nulla irure
+						Lorem.
+					</p>
 				</div>
-			</swiper-slide>
-			<swiper-slide>
-				<div className="flex gap-10">
-					<div className="w-1/2">
-						<img
-							src={process.env.PUBLIC_URL + "/images/IMG_1636.webp"}
-							alt="img-1"
-							className="rounded-2xl overflow-hidden mb-4"
-						/>
-					</div>
-					<div className="w-1/2">
-						<h1 className="text-2xl font-bold mb-6">Vision</h1>
-						<p>
-							Enim in culpa et consectetur occaecat magna cillum fugiat
-							adipisicing minim cillum excepteur est nulla. Ullamco aliquip
-							aliquip officia ea sunt voluptate irure ad ea laborum voluptate
-							commodo aute incididunt. Ex cillum cupidatat pariatur ex
-							incididunt irure non consectetur tempor nulla exercitation ad
-							quis.
-							<br />
-							<br />
-							Enim in culpa et consectetur occaecat magna cillum fugiat
-							adipisicing minim cillum excepteur est nulla. Ullamco aliquip
-							aliquip officia ea sunt voluptate irure ad ea laborum voluptate
-							commodo aute incididunt. Ex cillum cupidatat pariatur ex
-							incididunt irure non consectetur tempor nulla exercitation ad
-							quis.
-						</p>
-					</div>
+			</div>
+			<div className="swiper-slide contact-info">
+				<div className="inner">
+					<h2>
+						<Link to="/">
+							Back<i className="icon-arrows-slim-right"></i>
+						</Link>
+					</h2>
+					<p className="address small-text">
+						6000 King, Ste. 2009 <br />
+						Los Angeles, CA 80016, USA
+					</p>
+					<ul className="contact-infos small-text">
+						<li>
+							<a href="mailto:no-filtr@info.com">no-filtr@info.com</a>
+						</li>
+						<li>+36 1234 5678</li>
+					</ul>
 				</div>
-			</swiper-slide>
-			<swiper-slide>
-				<div className="flex gap-10">
-					<div className="w-1/2">
-						<img
-							src={process.env.PUBLIC_URL + "/images/IMG_1636.webp"}
-							alt="img-1"
-							className="rounded-2xl overflow-hidden mb-4"
-						/>
-					</div>
-					<div className="w-1/2">
-						<h1 className="text-2xl font-bold mb-6">Vision</h1>
-						<p>
-							Enim in culpa et consectetur occaecat magna cillum fugiat
-							adipisicing minim cillum excepteur est nulla. Ullamco aliquip
-							aliquip officia ea sunt voluptate irure ad ea laborum voluptate
-							commodo aute incididunt. Ex cillum cupidatat pariatur ex
-							incididunt irure non consectetur tempor nulla exercitation ad
-							quis.
-							<br />
-							<br />
-							Enim in culpa et consectetur occaecat magna cillum fugiat
-							adipisicing minim cillum excepteur est nulla. Ullamco aliquip
-							aliquip officia ea sunt voluptate irure ad ea laborum voluptate
-							commodo aute incididunt. Ex cillum cupidatat pariatur ex
-							incididunt irure non consectetur tempor nulla exercitation ad
-							quis.
-						</p>
-					</div>
-				</div>
-			</swiper-slide>
-			<swiper-slide>
-				<div className="flex gap-10">
-					<div className="w-1/2">
-						<img
-							src={process.env.PUBLIC_URL + "/images/IMG_1636.webp"}
-							alt="img-1"
-							className="rounded-2xl overflow-hidden mb-4"
-						/>
-					</div>
-					<div className="w-1/2">
-						<h1 className="text-2xl font-bold mb-6">Vision</h1>
-						<p>
-							Enim in culpa et consectetur occaecat magna cillum fugiat
-							adipisicing minim cillum excepteur est nulla. Ullamco aliquip
-							aliquip officia ea sunt voluptate irure ad ea laborum voluptate
-							commodo aute incididunt. Ex cillum cupidatat pariatur ex
-							incididunt irure non consectetur tempor nulla exercitation ad
-							quis.
-							<br />
-							<br />
-							Enim in culpa et consectetur occaecat magna cillum fugiat
-							adipisicing minim cillum excepteur est nulla. Ullamco aliquip
-							aliquip officia ea sunt voluptate irure ad ea laborum voluptate
-							commodo aute incididunt. Ex cillum cupidatat pariatur ex
-							incididunt irure non consectetur tempor nulla exercitation ad
-							quis.
-						</p>
-					</div>
-				</div>
-			</swiper-slide>
-		</swiper-container>
+			</div>
+		</>
 	);
 };
 
