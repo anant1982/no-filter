@@ -4,26 +4,9 @@ const SmallTalkDetails = () => {
 	return (
 		<>
 			<div
-				className="swiper-slide work"
-				data-hash="work-1"
-				data-color="#e4c7ae">
-				<div className="inner">
-					<img
-						style={{
-							borderRadius: "16px",
-						}}
-						src={process.env.PUBLIC_URL + "/images/IMG_1637.webp"}
-						alt="work 1"
-					/>
-				</div>
-			</div>
-			<div
 				className="swiper-slide service"
 				data-hash="work-2"
 				data-color="#bed1e0">
-				<div className="inner-top">
-					<h2>SMALL TALK</h2>
-				</div>
 				<div className="inner">
 					<h2 className="is-uppercase">About Us</h2>
 					<p>
@@ -50,9 +33,6 @@ const SmallTalkDetails = () => {
 				className="swiper-slide service"
 				data-hash="work-3"
 				data-color="#bed1e0">
-				<div className="inner-top">
-					<h2>SMALL TALK</h2>
-				</div>
 				<div className="inner">
 					<h2 className="is-uppercase">Roster</h2>
 					<p>
@@ -71,9 +51,6 @@ const SmallTalkDetails = () => {
 				className="swiper-slide service"
 				data-hash="work-4"
 				data-color="#bed1e0">
-				<div className="inner-top">
-					<h2>SMALL TALK</h2>
-				</div>
 				<div className="inner">
 					<h2 className="is-uppercase">Brands</h2>
 					<p>
@@ -92,9 +69,6 @@ const SmallTalkDetails = () => {
 				className="swiper-slide service"
 				data-hash="work-5"
 				data-color="#bed1e0">
-				<div className="inner-top">
-					<h2>SMALL TALK</h2>
-				</div>
 				<div className="inner">
 					<h2 className="is-uppercase">Teams | Services</h2>
 					<p>
@@ -113,9 +87,6 @@ const SmallTalkDetails = () => {
 				className="swiper-slide service"
 				data-hash="work-6"
 				data-color="#bed1e0">
-				<div className="inner-top">
-					<h2>SMALL TALK</h2>
-				</div>
 				<div className="inner">
 					<h2 className="is-uppercase">Culture</h2>
 					<p>

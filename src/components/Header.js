@@ -10,7 +10,7 @@ const Header = () => {
 	return (
 		<>
 			<div id="menu-bar">
-				<Link to="/" id="logo">
+				<Link to="/" id="logo" className="is-uppercase">
 					NoFiltr
 				</Link>
 			</div>

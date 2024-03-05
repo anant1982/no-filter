@@ -7,8 +7,25 @@ const SmallTalk = () => {
 		swiperInitialize();
 	}, []);
 	return (
-		<div id="wrapper">
-			<div className="swiper-container" id="gallery">
+		<div id="wrapper" className="still-slide-wrapper">
+			<div className="still-slide work" data-hash="work-1" data-color="#e4c7ae">
+				<div className="inner">
+					<img
+						src={process.env.PUBLIC_URL + "/images/IMG_1637.webp"}
+						alt="work 1"
+					/>
+				</div>
+			</div>
+			<div
+				className="swiper-container"
+				style={{
+					borderTopLeftRadius: "16px",
+					borderBottomLeftRadius: "16px",
+				}}
+				id="gallery">
+				<div className="inner-top">
+					<h2>SMALL TALK</h2>
+				</div>
 				<div className="swiper-wrapper">
 					<SmallTalkDetails />
 				</div>

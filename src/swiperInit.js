@@ -98,7 +98,7 @@ export function swiperInitialize() {
 		);
 	}
 	var mySwiper = new Swiper("#gallery", {
-		speed: 700,
+		speed: 1500,
 		mousewheel: true,
 		grabCursor: true,
 		on: {
