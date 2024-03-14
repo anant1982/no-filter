@@ -1,15 +1,9 @@
-import MainContainer from "./MainContainer";
-import { useEffect } from "react";
-import { swiperInitialize } from "../swiperInit";
+import { items } from "../utils/imageData";
+import SliderInfinite from "./SliderInfinite";
 const Home = () => {
-	useEffect(() => {
-		swiperInitialize();
-	}, []);
 	return (
-		<div id="wrapper">
-			<div className="home-page-wrapper">
-				<MainContainer />
-			</div>
+		<div id="wrapper" style={{ background: "#b5b5c1" }}>
+			<SliderInfinite className="slider-infinite" items={items} />
 		</div>
 	);
 };

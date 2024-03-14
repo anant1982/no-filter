@@ -1,12 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { swiperInitialize } from "../swiperInit";
 
 const Header = () => {
-	const FullYear = new Date();
-	useEffect(() => {
-		swiperInitialize();
-	}, []);
 	return (
 		<>
 			<div id="menu-bar">
@@ -16,9 +11,9 @@ const Header = () => {
 			</div>
 			<Link to="/" id="contact" className="is-hidden-touch">
 				<img
-					alt="close icon"
-					style={{ width: "20px" }}
-					src={process.env.PUBLIC_URL + "/images/close.png"}
+					alt="Nofiltr logo"
+					style={{ width: "40px" }}
+					src={process.env.PUBLIC_URL + "/images/nofiltr-black.png"}
 				/>
 			</Link>
 		</>
